@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(213, 213, 43);
+    color: black;
+}
+
+.button{
+    
+    display: block;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+#grey{
+    background-color: grey;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
