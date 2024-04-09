@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 5</title>
+</head>
+<body style="background-color:darkgrey;">
+    <div class="project">
+        <div id="insert">
+            <div style="margin-top: 150px; margin-left: 450px; font-size:xx-large " class="class">Press the key and I will guess you 😎.</div>
+            <table style="color: black; border: 1px solid black; margin-top: 30px; margin-left: 450px; font-size:xx-large">
+                <tr>
+                    <th>Key</th>
+                    <th>Keycode</th>
+                    <th>Code</th>
+                </tr>
+                <tr>
+                    <th id="key"></th>
+                    <th id="keyCode"></th>
+                    <th id="code"></th>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+</body>
+<script>
+    const key = document.getElementById('key')
+    const keyCode = document.getElementById('keyCode')
+    const code = document.getElementById('code')
+
+    window.addEventListener('keydown',(e) => {
+        key.innerHTML = e.key === ' ' ? "Space" : e.key
+        keyCode.innerHTML = e.keyCode
+        code.innerHTML = e.code
+    })
+</script>
+</html>
